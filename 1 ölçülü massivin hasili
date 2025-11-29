@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void Hasil(int a[], int n) {
+    int hasil = 1;
+    for (int i = 0; i < n; i++)
+        hasil= hasil* a[i];
+
+    cout << "Hasil = " << hasil << endl;
+}
+int main() {
+    int a[] = {4, 8, 3, 6, 10};
+    int n = 5;
+    Hasil(a, n);
+
+    return 0;
+}
