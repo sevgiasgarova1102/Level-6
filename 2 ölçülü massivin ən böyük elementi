@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void Max(int a[][3], int setir, int sutun) {
+    int max = a[0][0];
+
+    for (int i = 0; i < setir; i++)
+        for (int j = 0; j < sutun; j++)
+            if (a[i][j] > max)
+                max = a[i][j];
+
+    cout << "Max = " << max << endl;
+}
+
+int main() {
+    int a[2][3] = {
+        {4, 8, 3},
+        {6, 10, 1}
+    };
+
+    Max(a, 2, 3);
+
+    return 0;
+}
