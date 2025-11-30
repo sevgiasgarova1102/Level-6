@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+void Min(int a[], int n) {
+    int min = a[0];
+    for (int i = 1; i < n; i++)
+        if (a[i] < min)
+            min = a[i];
+
+    cout << "Min = " << min << endl;
+}
+
+int main() {
+    int a[] = {4, 8, 3, 6, 10};
+    int n = 5;
+
+    Min(a, n);
+
+    return 0;
+}
